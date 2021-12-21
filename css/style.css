@@ -27,6 +27,7 @@ img {
   80%{transform: translate(0,20px);}
   100%{transform: translate(0,0px);}
 }
+
 ul,
 li {
   list-style: none;
@@ -185,9 +186,23 @@ li {
   margin-right: 30px;
   border-radius: 50%;
 }
-.main-visual-img img {
+.icon img{
   border-radius: 50%;
+  position: relative;
 }
+.icon .move2{
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: 0.5s;
+  width: 256px;
+	height: 256px;
+}
+.icon:hover .move2 {
+  opacity: 1;
+}
+
 .main-visual-text {
   flex: 1;
 }
