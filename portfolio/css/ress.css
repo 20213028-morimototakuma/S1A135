@@ -31,6 +31,7 @@ html {
 }
 
 * {
+  
   margin: 0;
   padding: 0; /* Reset `padding` and `margin` of all elements */
 }
@@ -73,9 +74,7 @@ a {
 }
 
 a:active,
-a:hover {
-  outline-width: 0; /* Remove the outline when hovering in all browsers */
-}
+
 
 code,
 kbd,

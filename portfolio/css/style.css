@@ -18,6 +18,15 @@ img {
   vertical-align: bottom;
   border-style: none;
 }
+.move1{animation: ymove 5s ease 0.5s infinite}
+@keyframes ymove{
+  0%{transform: translate(0,0);}
+  20%{transform: translate(0,20px);}
+  40%{transform: translate(0,40px);}
+  60%{transform: translate(0,-20px);}
+  80%{transform: translate(0,20px);}
+  100%{transform: translate(0,0px);}
+}
 
 ul,
 li {
@@ -177,9 +186,23 @@ li {
   margin-right: 30px;
   border-radius: 50%;
 }
-.main-visual-img img {
+.icon img{
   border-radius: 50%;
+  position: relative;
 }
+.icon .move2{
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: 0.5s;
+  width: 256px;
+	height: 256px;
+}
+.icon:hover .move2 {
+  opacity: 1;
+}
+
 .main-visual-text {
   flex: 1;
 }
