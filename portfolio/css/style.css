@@ -4,6 +4,7 @@ body {
   line-height: 1.8;
   letter-spacing: .8px;
   color: #333;
+  text-align: center;
 }
 
 a {
@@ -18,14 +19,20 @@ img {
   vertical-align: bottom;
   border-style: none;
 }
-.move1{animation: ymove 5s ease 0.5s infinite}
+.backlogo{
+  max-width: 50%;
+}
+.move1{
+  margin: 0 auto;
+  animation: ymove 5s ease 0.5s infinite
+}
 @keyframes ymove{
-  0%{transform: translate(0,0);}
-  20%{transform: translate(0,20px);}
-  40%{transform: translate(0,40px);}
-  60%{transform: translate(0,-20px);}
-  80%{transform: translate(0,20px);}
-  100%{transform: translate(0,0px);}
+  0%{transform: translate(-20px,-60px);}
+  20%{transform: translate(-20px,-40px);}
+  40%{transform: translate(-20px,-80px);}
+  60%{transform: translate(-20px,-60px);}
+  80%{transform: translate(-20px,-40px);}
+  100%{transform: translate(-20px,-60px);}
 }
 
 ul,
@@ -209,7 +216,37 @@ li {
 .main-visual-text p:not(:last-child) {
   margin-bottom: 30px;
 }
-
+.globalNav{
+  width:100%;
+  margin-top: 20px;
+  background: #333;
+}
+.globalNav ul{
+  padding:10px 0;
+  list-style:none;
+  display: flex;
+  justify-content: center;
+}
+.navItem{
+  border-left: 1px solid #999;
+  text-align: center;
+  flex:0 1 22%;
+}
+.navItem:last-of-type{
+  border-right: 1px solid #999;
+}
+.navItem a{
+  display: block;
+  line-height: 1;
+  color: #fff;
+  text-decoration: none;
+}
+.globalNav1 ul{
+  list-style: square;
+}
+.globalNav2 ul{
+  list-style: url(img/arrow2.png);
+}
 /*--------------------------------
  Works
 ---------------------------------*/
