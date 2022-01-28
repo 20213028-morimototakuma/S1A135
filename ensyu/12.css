@@ -13,7 +13,7 @@ a.second{
     line-height: 2;
 }
 a.second.link{color:#00f;}
-a.second.link{color:#90a;}
+a.second.visited{color:#90a;}
 a.second:hover{
     background-color: #ff0;
 }
@@ -27,7 +27,7 @@ a.second:focus{
 li:nth-of-type(odd){
     background-color: #0c0;
 }
-li:nth-of-type(odd){
+li:nth-of-type(even){
     background-color: #ccc;
 }
 h3::before{content:"★";}
