@@ -67,13 +67,36 @@
         <img src="img/ttl_price.svg" alt="入場料">
       </h2>
       <!-- テーブル -->
-      
+      <table class="price-table">
         <!-- テーブルの上部 -->
-
+        <thead>
+          <tr>
+            <th>区分</th>
+            <th>個人</th>
+            <th>団体（10名以上）</th>
+          </tr>
+        </thead>
         <!-- テーブルの本体 -->
-        
+        <tbody>
+          <tr>
+            <th>一般</th>
+            <td>1,200円</td>
+            <td>1,000円</td>
+          </tr>
+          <tr>
+            <th>中学生</th>
+            <td>600円</td>
+            <td>500円</td>
+          </tr>
+          <tr>
+            <th>小学生以下</th>
+            <td>400円</td>
+            <td>200円</td>
+          </tr>
+        </tbody>
       
       <!-- テーブルここまで -->
+    </table>
     </section>
     <!-- セクション（入場料）ここまで -->
   </main>
@@ -104,5 +127,28 @@
     </p>
   </footer>
   <!-- フッターここまで -->
+  <form action="">
+    <div class="form-group">
+      <label for="yourName" class="form-label">お名前</label>
+      <div>
+        <input type="text" name="お名前" id="yourName">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="yourEmail" class="form-label">E-Mail</label>
+    <div>
+      <input type="email" name="E-Mail" id="yourEmail">
+    </div>
+    </div>
+    <div class="form-group">
+      <label for="yourInquiry" class="form-label">お問い合わせ内容</label>
+      <div>
+    <textarea name="お問い合わせ内容" id="yourInquiry" cols="30" rows="10"></textarea>
+      </div>
+  </div>
+  <div class="form-btn">
+    <button type="submit"><img src="../img/btn_send.svg" alt="送信する"></button>
+  </div>
+  </form>
 </body>
 </html>
